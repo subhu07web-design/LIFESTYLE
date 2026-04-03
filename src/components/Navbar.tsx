@@ -45,14 +45,6 @@ export const Navbar: React.FC = () => {
       )}
 
       <div className="container mx-auto px-4 flex items-center justify-between">
-        {/* Mobile Menu Toggle */}
-        <button 
-          className="md:hidden p-2 text-black"
-          onClick={() => setIsMobileMenuOpen(true)}
-        >
-          <Menu size={24} />
-        </button>
-
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img 
@@ -81,7 +73,7 @@ export const Navbar: React.FC = () => {
         </nav>
 
         {/* Actions */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 md:gap-4">
           <button className={cn(
             "p-2 hover:text-amber-600 transition-colors",
             !isScrolled && location.pathname === '/' ? "text-white" : "text-black"
@@ -110,6 +102,16 @@ export const Navbar: React.FC = () => {
               </span>
             )}
           </Link>
+          
+          {/* Mobile Menu Toggle */}
+          <button 
+            className="md:hidden p-2 text-black"
+            onClick={() => setIsMobileMenuOpen(true)}
+          >
+            <Menu size={24} className={cn(
+              !isScrolled && location.pathname === '/' ? "text-white" : "text-black"
+            )} />
+          </button>
         </div>
       </div>
 
