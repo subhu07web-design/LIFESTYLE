@@ -1,0 +1,7 @@
+{
+  "name": "Lifestyle – Family Store",
+  "description": "Premium clothing retail store in North Lakhimpur, Assam. Shop the latest fashion for Men, Women, and Kids.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
