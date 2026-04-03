@@ -36,8 +36,8 @@ const HeroSlider = () => {
         <motion.img
           key={currentIndex}
           src={images[currentIndex]}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, scale: 1.1 }}
+          animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1.5 }}
           className="absolute inset-0 w-full h-full object-cover"
@@ -87,7 +87,7 @@ export const Home: React.FC = () => {
       />
 
       {/* Hero Section */}
-      <section className="relative aspect-[16/9] md:aspect-auto md:h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <HeroSlider />
           <div className="absolute inset-0 bg-black/40 z-10" />
@@ -106,7 +106,7 @@ export const Home: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-3xl md:text-8xl font-bold tracking-tighter mb-8 leading-none"
+            className="text-5xl md:text-8xl font-bold tracking-tighter mb-8 leading-none"
           >
             ELEVATE YOUR <br /> <span className="text-amber-500">LIFESTYLE</span>
           </motion.h1>
