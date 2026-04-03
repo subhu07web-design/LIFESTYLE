@@ -51,7 +51,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </Link>
 
         {/* Actions */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 translate-y-12 group-hover:translate-y-0 transition-transform duration-300">
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 transition-all duration-300 translate-y-0 md:translate-y-12 md:group-hover:translate-y-0 opacity-100 md:opacity-0 md:group-hover:opacity-100">
           <button 
             onClick={() => toggleWishlist(product)}
             className={cn(
