@@ -136,5 +136,24 @@ export const PRODUCTS: Product[] = [
     isNew: true,
     rating: 5.0,
     reviews: 12
+  },
+  {
+    id: 'm6',
+    name: 'Premium Formal Shirt',
+    price: 1299,
+    originalPrice: 1999,
+    description: 'A high-quality formal shirt designed for a sharp, professional look. Crafted from premium breathable cotton, this shirt offers both comfort and style for your office and formal events.',
+    category: 'Men',
+    images: [
+      'https://res.cloudinary.com/duy2rot8s/image/upload/v1775569701/demo_img_su8yfp.webp',
+      'https://res.cloudinary.com/duy2rot8s/image/upload/v1775569745/demo_img_2_m89fir.webp',
+      'https://res.cloudinary.com/duy2rot8s/image/upload/v1775569757/demo_img_3_wozmtw.jpg',
+      'https://res.cloudinary.com/duy2rot8s/image/upload/v1775569769/demo_img_4_kyiqrz.jpg'
+    ],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    isFeatured: true,
+    isNew: true,
+    rating: 4.8,
+    reviews: 15
   }
 ];
